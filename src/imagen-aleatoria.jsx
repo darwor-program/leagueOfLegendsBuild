@@ -114,8 +114,23 @@ export default function ImagenAleatoria() {
         if(intervalId) clearInterval(intervalId)
         if(intervaloRunas) clearInterval(intervaloRunas)
         if(intervaloItem1) clearInterval(intervaloItem1)
-        if(imagenItem2 !== imagenItem1)clearInterval(intervaloItem2)
-        if(imagenItem3 !== imagenItem1 && imagenItem3 !== imagenItem2)clearInterval(intervaloItem3)
+
+        let item2 = true;
+        let item3 = true;
+
+        if(imagenItem2 !== imagenItem1){
+            clearInterval(intervaloItem2)
+            setIntervaloItem2(null)
+            item2 = null
+        }
+
+        if(imagenItem3 !== imagenItem1 && imagenItem3 !== imagenItem2){
+            clearInterval(intervaloItem3)
+            setIntervaloItem3(null)
+            item3 = null
+        }
+        
+        if(item2 || item3) return
         setGirando(false)
     }
 
