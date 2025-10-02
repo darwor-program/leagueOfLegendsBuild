@@ -1,0 +1,11 @@
+html, body ,#root {
+  height: 100%;     /* asegura que todo el árbol ocupe el alto completo */
+  width: 100%;      /* asegura que use todo el ancho */
+  margin: 0;        /* quita márgenes por defecto */
+  padding: 0;       /* quita padding por defecto */
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+}
