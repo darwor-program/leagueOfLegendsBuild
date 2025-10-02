@@ -133,19 +133,13 @@ export default function ImagenAleatoria() {
                     border: "2px solid black",
                 }}>    
             </div>
-            <div
+            <div className="imagen-runa"
                 style={{
                     backgroundImage: `url(${imagenRuna})`,
-                    height: "200px",
-                    width: "200px",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    border: "2px solid black",
-                    marginLeft: "20px"  
                 }}>    
             </div>
             <div className="items">
-                <div
+                <div className="item"
                     style={{
                         backgroundImage: `url(${imagenItem1})`,
                         height: "50px",
@@ -155,19 +149,12 @@ export default function ImagenAleatoria() {
                         border: "2px solid black",
                     }}>    
                 </div>
-                <div
+                <div className="item2"
                     style={{
                         backgroundImage: `url(${imagenItem2})`,
-                        height: "50px",
-                        width: "50px",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        border: "2px solid black",
-                        marginTop: "20px",
-                        marginBottom: "20px"
                     }}>    
                 </div>
-                <div
+                <div className="item"
                     style={{
                         backgroundImage: `url(${imagenItem3})`,
                         height: "50px",

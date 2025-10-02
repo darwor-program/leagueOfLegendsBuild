@@ -5,6 +5,25 @@
   margin-top: 200px;
 }
 
+.item2{
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+
+.imagen-runa{
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid black;
+  margin-Left: 20px  
+}
+
 .juego-imagenes{
   display: flex;
   align-items: center;
@@ -21,4 +40,44 @@
   flex-direction: column;
   padding-left: 30px;
   height: 200px;
+}
+
+@media (max-width: 768px){
+  body{
+    height: 100%;
+    width: 100%;
+  }
+
+  .contenido-principal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .juego-imagenes{
+    flex-direction: column;
+  }
+
+  .imagen-runa{
+    margin-left: 0;
+    margin-top:  20px;
+  }
+
+  .items{
+    flex-direction: row;
+    margin-top: 20px;
+    height: 100px;
+    padding: 0;
+  }
+
+  .item2{
+    margin-top: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .juego-imagenes button {
+    margin-bottom: 10px;
+  }
 }
