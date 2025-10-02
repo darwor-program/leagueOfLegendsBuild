@@ -86,7 +86,7 @@ export default function ImagenAleatoria() {
         const idItem2 = setInterval(() => {
             setImagenItem2((prev) => {
                 let imagenPrev = items[Math.floor(Math.random() * items.length)]
-                while(imagenPrev === prev){
+                while(imagenPrev === prev ){
                     imagenPrev = items[Math.floor(Math.random() * items.length)]
                 }
                 return imagenPrev
@@ -96,7 +96,7 @@ export default function ImagenAleatoria() {
         const idItem3 = setInterval(() => {
             setImagenItem3((prev) => {
                 let imagenPrev = items[Math.floor(Math.random() * items.length)]
-                while(imagenPrev === prev){
+                while(imagenPrev === prev ){
                     imagenPrev = items[Math.floor(Math.random() * items.length)]
                 }
                 return imagenPrev
@@ -111,11 +111,11 @@ export default function ImagenAleatoria() {
     }
 
     const parar = () => {
-        clearInterval(intervalId)
-        clearInterval(intervaloRunas)
-        clearInterval(intervaloItem1)
-        clearInterval(intervaloItem2)
-        clearInterval(intervaloItem3)
+        if(intervalId) clearInterval(intervalId)
+        if(intervaloRunas) clearInterval(intervaloRunas)
+        if(intervaloItem1) clearInterval(intervaloItem1)
+        if(imagenItem2 !== imagenItem1)clearInterval(intervaloItem2)
+        if(imagenItem3 !== imagenItem1 && imagenItem3 !== imagenItem2)clearInterval(intervaloItem3)
         setGirando(false)
     }
 
